@@ -60,7 +60,7 @@ resource "aws_instance" "web" {
   tags {
     Identity = "totaljobs-c74d97b01eae257e44aa9d5bade97baf"
   }
-}
+
 
 output "public_ip" {
   value = "${join(", ", aws_instance.web.*.public_ip)}"
